@@ -3,12 +3,7 @@
 You need Python installed to run the script, if you don't know how to do it, see here https://www.python.org/downloads/
 
 ### How to convert notes from Nimbus to Simplenote?
-<<<<<<< HEAD
 1. Download nimbusnote_to_simplenote.py
-=======
-
-1. Download convert_to_simplenote.py
->>>>>>> 699497a600df107ff77d3b2eaa3eca06239b63e0
 2. In Nimbus Note, select the file tab and click Export all note.
 3. Select HTML and click export.
 4. Open the created folder, you should see a folder named "All Notes" in it.
@@ -16,10 +11,5 @@ You need Python installed to run the script, if you don't know how to do it, see
 ```
 py nimbusnote_to_simplenote.py 'C:\YOUR_PATH\All Notes'
 ```
-<<<<<<< HEAD
 6. Notes.json file should appear in the folder where nimbusnote_to_simplenote.py is located
-7. Run Simplenote, select the file tab and click Import Notes... and select the notes.json file
-=======
-6. Notes.json file should appear in the folder where convert_to_simplenote.py is located
-7. Run Simplenote, select the file tab and click Import Notes... and select the notes.json file
->>>>>>> 699497a600df107ff77d3b2eaa3eca06239b63e0
+7. Run Simplenote, select the file tab and click Import Notes and select the notes.json file
