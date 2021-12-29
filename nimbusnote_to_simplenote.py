@@ -16,7 +16,7 @@ import json
 
 notes_json = {
     "activeNotes": [],
-    "trashedNotes": []
+    "trashedNotes": [],
 }
 
 
@@ -34,8 +34,8 @@ def convert_to_simplenote(path, tag_list=[]):
             note = {
                 "id": "",
                 "content": f"{title}\r\n{content}",
-                "creationDate": "",
-                "lastModified": "",
+                "creationDate": "1410-01-01T16:20:00.000Z",
+                "lastModified": "1410-01-01T16:20:00.000Z",
                 "tags": tag_list
             }
             notes_json["activeNotes"].append(note)
@@ -43,7 +43,7 @@ def convert_to_simplenote(path, tag_list=[]):
         else:
             jong_path = f'{path}\{dir}'
             new_tag_list = tag_list.copy()
-            new_tag_list.append(dir)
+            new_tag_list.append(dir.lower().replace(' ', '_'))
             convert_to_simplenote(jong_path, new_tag_list)
 
 
